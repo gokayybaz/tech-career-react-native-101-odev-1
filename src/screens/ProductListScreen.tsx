@@ -10,8 +10,10 @@ const ProductListScreen = () => {
         <Card style={{marginTop: '5%'}} key={item.id}>
           <Card.Cover style={{padding: '2%'}} source={{uri: item.image}} />
           <Card.Content style={{marginTop: '5%'}}>
-            <Text variant="titleLarge">{item.name}</Text>
-            <Text style={{marginTop: '2%'}} variant="titleLarge">
+            <Text style={{fontWeight: 'bold'}} variant="titleLarge">
+              {item.name}
+            </Text>
+            <Text style={{marginTop: '2%', fontSize: 18}} variant="titleLarge">
               Fiyat : {item.unitPrice}
             </Text>
             <Text style={{marginTop: '2%'}} variant="bodyMedium">
